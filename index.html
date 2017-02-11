@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Hoonigan Motoring</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+    <nav class="light-blue lighten-1">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo center"><i class="material-icons prefix">directions_car</i></a>
+        </div>
+    </nav>
+    <div class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br>
+            <br>
+            <h1 class="header center light-blue-text">Select your vehicle</h1>
+            <div class="row center">
+                <h5 class="header col s12 light">Precise tuning options for motoring enthusiasts.</h5>
+            </div>
+            <div class="row">
+                <form class="col s12" name="form1" method="post" action="hoonigan.php">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">face</i>
+                            <input id="icon_prefix" name="name" type="text" class="validate">
+                            <label for="icon_prefix">Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">perm_contact_calendar</i>
+                            <input id="icon_age" name="age" type="tel" class="validate">
+                            <label for="icon_age">Age</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">mail_outline</i>
+                            <input id="icon_email" name="email" type="email" class="validate">
+                            <label for="icon_email">Email</label>
+                            <label for="icon_email" data-error="wrong" data-success="right">Email</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <select class="icons" name="vehicle">
+                                <option value="" disabled selected>Choose your vehicle</option>
+                                <option value="Mazda RX-7" data-icon="img/rx7.jpg" class="circle">Mazda RX-7</option>
+                                <option value="Mazda RX-8" data-icon="img/rx8.jpg" class="circle">Mazda RX-8</option>
+                                <option value="Acura NSX" data-icon="img/nsx.jpg" class="circle">Acura NSX</option>
+                                <option value="Datsun 280z" data-icon="img/280z.png" class="circle">Datsun 280z</option>
+                            </select>
+                        </div>
+                        <div class="input-field col s6">
+                            <select multiple name="options[]">
+                                <option value="" disabled selected>Choose your options</option>
+                                <option value="NOS">NOS</option>
+                                <option value="Neon">Neon</option>
+                                <option value="Big Wang">Big Wang</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <div class="row center">
+                        <div class="input-field col s12">
+                            <input type="submit" class="btn-large waves-effect waves-light blue lighten-1">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+
+
+    </div>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+
+</body>
+
+</html>
